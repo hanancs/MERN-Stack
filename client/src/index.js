@@ -10,9 +10,18 @@ import './index.css';
 
 const store = createStore(reducers, compose(applyMiddleware(thunk)));
 
+debugger;
+
+const Footer = () => (
+  <footer className="footer">
+    <p>&copy; MEM.IO 2021</p>
+  </footer>
+);
+
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <App />,
+    <Footer/>
   </Provider>,
   document.getElementById('root'),
 );

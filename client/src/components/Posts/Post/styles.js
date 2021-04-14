@@ -49,4 +49,15 @@ export default makeStyles({
     display: 'flex',
     justifyContent: 'space-between',
   },
+  thum: {
+    marginBottom: 10,
+    marginRight: 20,
+    color: '#EE5522',
+    borderRadius:60,
+    "&:hover": {
+      //you want this to be the same as the backgroundColor above
+      color: '#FFBB33',
+  }
+    
+  }
 });
