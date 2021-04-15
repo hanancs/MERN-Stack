@@ -23,7 +23,7 @@ const Post = ({ post, setCurrentId }) => {
           <><FavoriteIcon fontSize="small" />&nbsp;{post.likes.length > 2 ? `You and ${post.likes.length - 1} others` : `${post.likes.length} ${post.likes.length > 1 ? '' : ''}` }</>
         ) : (
           <div>
-            <FavoriteIcon fontSize="small" />&nbsp;{post.likes.length} 
+            <FavoriteIcon fontSize="small" />&nbsp;{post.likes.length} {post.likes.length === 1 ? 'Heart' : 'Hearts'}
           </div>
         );
     }
