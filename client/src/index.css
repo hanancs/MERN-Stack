@@ -32,6 +32,11 @@ body {
     background-color: #312b29;
     color: #ee5522;
     font-size: 20px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
 }
 
 #root {

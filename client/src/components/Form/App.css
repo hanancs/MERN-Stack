@@ -1,0 +1,55 @@
+
+.App {
+    font-family: sans-serif;
+    font-weight:800;
+    font-size:40px;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:20vh;
+    color:rgb(255, 251, 251);
+    border-radius: 20px;
+    padding: 15px;
+    
+}
+
+.color-change-5x {
+	-webkit-animation: color-change-5x 8s linear infinite alternate backwards;
+	        animation: color-change-5x 8s linear infinite alternate backwards;
+}
+
+@-webkit-keyframes color-change-5x {
+    0% {
+      background: #19dcea;
+    }
+    25% {
+      background: #b22cff;
+    }
+    50% {
+      background: #ea2222;
+    }
+    75% {
+      background: #f5be10;
+    }
+    100% {
+      background: #3bd80d;
+    }
+  }
+  @keyframes color-change-5x {
+    0% {
+      background: #19dcea;
+    }
+    25% {
+      background: #b22cff;
+    }
+    50% {
+      background: #ea2222;
+    }
+    75% {
+      background: #f5be10;
+    }
+    100% {
+      background: #3bd80d;
+    }
+  }

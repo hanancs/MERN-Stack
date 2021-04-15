@@ -8,14 +8,21 @@ export default makeStyles((theme) => ({
   root: {
     '& .MuiTextField-root': {
       margin: theme.spacing(1),
-      borderColor: 'orange',
+      borderColor: 'orange',  
     },
+    
   },
   notchedOutline: {
     borderWidth: "1px",
     borderColor: "yellow !important"
   },
   paper: {
+    padding: theme.spacing(2),
+    borderRadius:40,
+    width:'400px',
+    margin: "0",
+  },
+  paper1: {
     padding: theme.spacing(2),
     borderRadius:40,
     

@@ -19,54 +19,53 @@
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
     <title>நினைவுகளே.io</title>
     <style>
-      .loader {
-        border: 16px solid #f3f3f3;
-        border-radius: 50%;
-        border-top: 16px solid #3498db;
-        width: 120px;
-        height: 120px;
-        -webkit-animation: spin 2s linear infinite;
-        animation: spin 2s linear infinite;
-        margin:auto;
-        left:0;
-        right:0;
-        top:0;
-        bottom:0;
-        position:fixed;
+      .loaderpic {
+        width: 200px;
+        height: 200px;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+                
       }
 
-      .flip-vertical-left {
-        -webkit-animation: flip-vertical-left 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-                animation: flip-vertical-left 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+      .blink-1 {
+        -webkit-animation: blink-1 2s 3 both;
+                animation: blink-1 2s 3 both;
       }
       
-      @-webkit-keyframes flip-vertical-left {
-        0% {
-          -webkit-transform: rotateY(0);
-                  transform: rotateY(0);
-        }
+      @-webkit-keyframes blink-1 {
+        0%,
+        50%,
         100% {
-          -webkit-transform: rotateY(-180deg);
-                  transform: rotateY(-180deg);
+          opacity: 1;
+        }
+        25%,
+        75% {
+          opacity: 0;
         }
       }
-      @keyframes flip-vertical-left {
-        0% {
-          -webkit-transform: rotateY(0);
-                  transform: rotateY(0);
-        }
+      @keyframes blink-1 {
+        0%,
+        50%,
         100% {
-          -webkit-transform: rotateY(-180deg);
-                  transform: rotateY(-180deg);
+          opacity: 1;
+        }
+        25%,
+        75% {
+          opacity: 0;
         }
       }
+      
     </style>
   </head>
   <body>
     <div id="root">
-      <div class="center">
+      <div class="loader">
         <!-- <div class="preloader12"></div> -->
-        <div class="flip-vertical-left"><img src="memories.png"></div>
+        <div class="blink-1"><img class="loaderpic" src="memories.png"></div>
       </div>
     </div>
   </body>
