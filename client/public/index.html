@@ -1,73 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="google-site-verification" content="-PQVhk09e1h7ryb4HLOKsP0noH9jJ6HZv5EQXZr-7uE" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="icon" type="image/png" href="./memories.png" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
-    <title>நினைவுகளே.io</title>
-    <style>
-      .loaderpic {
-        width: 200px;
-        height: 200px;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-                
+
+<head>
+  <meta name="google-site-verification" content="-PQVhk09e1h7ryb4HLOKsP0noH9jJ6HZv5EQXZr-7uE" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Primary Meta Tags -->
+  <title>நினைவுகளே.io | Count your blessings with Memories🤞</title>
+  <meta name="title" content="நினைவுகளே.io | Count your blessings with Memories🤞">
+  <meta name="description" content="Ninaivukaley is a Social Media Web App created by Ben Hanan Subendran ">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ninaivukaley.netlify.app/">
+  <meta property="og:title" content="நினைவுகளே.io | Count your blessings with Memories🤞">
+  <meta property="og:description" content="Ninaivukaley is a Social Media Web App created by Ben Hanan Subendran ">
+  <meta property="og:image"
+    content="https://i.ibb.co/gPpJbh1/Capture.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ninaivukaley.netlify.app/">
+  <meta property="twitter:title" content="நினைவுகளே.io | Count your blessings with Memories🤞">
+  <meta property="twitter:description" content="Ninaivukaley is a Social Media Web App created by Ben Hanan Subendran ">
+  <meta property="twitter:image"
+    content="https://i.ibb.co/gPpJbh1/Capture.png">
+
+  <link rel="icon" type="image/png" href="./memories.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab+Highlight:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Zilla+Slab+Highlight:wght@700&display=swap"
+    rel="stylesheet">
+  <style>
+    .loaderpic {
+      width: 200px;
+      height: 200px;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+
+    }
+
+    .blink-1 {
+      -webkit-animation: blink-1 2s 3 both;
+      animation: blink-1 2s 3 both;
+    }
+
+    @-webkit-keyframes blink-1 {
+
+      0%,
+      50%,
+      100% {
+        opacity: 1;
       }
 
-      .blink-1 {
-        -webkit-animation: blink-1 2s 3 both;
-                animation: blink-1 2s 3 both;
+      25%,
+      75% {
+        opacity: 0;
       }
-      
-      @-webkit-keyframes blink-1 {
-        0%,
-        50%,
-        100% {
-          opacity: 1;
-        }
-        25%,
-        75% {
-          opacity: 0;
-        }
+    }
+
+    @keyframes blink-1 {
+
+      0%,
+      50%,
+      100% {
+        opacity: 1;
       }
-      @keyframes blink-1 {
-        0%,
-        50%,
-        100% {
-          opacity: 1;
-        }
-        25%,
-        75% {
-          opacity: 0;
-        }
+
+      25%,
+      75% {
+        opacity: 0;
       }
-      
-    </style>
-  </head>
-  <body>
-    <div id="root">
-      <div class="loader">
-        <!-- <div class="preloader12"></div> -->
-        <div class="blink-1"><img class="loaderpic" src="memories.png"></div>
-      </div>
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div class="loader">
+      <!-- <div class="preloader12"></div> -->
+      <div class="blink-1"><img class="loaderpic" src="memories.png"></div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
